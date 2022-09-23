@@ -1,5 +1,45 @@
 body * {
   outline: 1px solid lightgrey;
 }
-
-
+.main {
+  margin: 25px 500px;
+}
+.header {
+  width: 199px;
+  height: 49px;
+  margin: 0 auto;
+  background-color: #358765;
+}
+.green-block {
+  display: flex;
+  justify-content: space-around;
+  margin: 34px;
+}
+.greenbl {
+  background-color: #588924;
+  height: 116px;
+  width: 153px;
+}
+.color-columns {
+  display: flex;
+  flex-direction: row;
+  margin: 34px;
+}
+.column {
+  width: 33.3%;
+  height: 147px;
+}
+.red {
+  background-color: #ee2525;
+}
+.blue {
+  background-color: #2d4bb5;
+}
+.yellow {
+  background-color: #edf111;
+}
+.footer {
+  background-color: #c4c4c4;
+  margin: 34px 34px;
+  height: 55px;
+}
