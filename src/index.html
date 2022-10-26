@@ -3,11 +3,89 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://fonts.cdnfonts.com/css/st-marie" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./main.scss">
-    <title>First project</title>
+    <title>Rabbit</title>
     <script src="./js/main.js" defer></script>
   </head>
   <body>
-    <h1>Hello world</h1>
+    <header>
+      <div class="container header">
+        @@include("./partials/logo/_logo.html")
+        <nav class="main-menu">
+          @@include("./partials/menu-item/_menu-item.html", {"menuItem": "home"})
+          @@include("./partials/menu-item/_menu-item.html", {"menuItem": "about"})
+          @@include("./partials/menu-item/_menu-item.html", {"menuItem": "work"})
+          @@include("./partials/menu-item/_menu-item.html", {"menuItem": "blog"})
+          @@include("./partials/menu-item/_menu-item.html", {"menuItem": "contact"})
+        </nav>
+      </div>
+    </header>
+    <div class="banner">
+      <div class="container__banner">
+        <div class="container__banner-content">
+          <div class="container__banner_text">
+            <p class="first_line">do you like rabbits?</p>
+            <p class="second_line">do you like oranges?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main-content">
+      <div class="container">
+        <div class="main-content__container_text">
+          @@include("./partials/text/_text.html")
+          @@include("./partials/text/_text.html")
+          @@include("./partials/text/_text.html")
+          @@include("./partials/text/_text.html")
+        </div>
+      <div class="table_of_contents">
+          <h1>Meet the team</h1>
+      </div>
+      <div class="container-main-content">
+          <div class="container-one">
+            <h3><span>Hoof</span><span class="or">-Leader</span></h3>
+            <p class="img_one"><img src="../../img/Layer 7.png" alt="лошадь"></p>
+            <p class="text">Hoof is our most talanted designer. However he's not the talkative type and I would advise not getting on the wrong side of him</p>
+          </div>
+          <div class="container-two">
+            <h3><span>Nibs</span><span class="or">-CEO/Director</span></h3>
+            <p class="img_two"><img src="../../img/Layer 8.png" alt="кролик"></p>
+            <p class="text">Nibs is our go to women. She's the ceo/director of orange rabbit and runs fast when she has too.</p>
+          </div>
+          <div class="container-three">
+            <h3><span>Squawk</span><span class="or">-Developer</span></h3>
+            <p class="img_three"><img src="../../img/Layer 9.png" alt="страус"></p>
+            <p class="text">Squawk is no social bunny. But when it comes to programming he stands out from the crowd.</p>
+          </div>
+          </div>
+          <div class="main-content__message">
+            <h1>Send us a message...</h1>
+          </div>
+          <form action="get" class="form-input">
+            <label for="name" class="form-input__input">
+                 Name:
+            </label>
+            <input id="name" type="text">
+            <label for="email" class="form-input__input">
+                Email:
+            </label>
+            <input id="email" type="text">
+            <label for="message" class="form-input__input">
+                Message:
+            </label>
+            <textarea id="message"></textarea> 
+          </form>
+          <div class="input_button">
+            <input type="button" value="Submit">
+          </div>
+        </div>
+    </div>
+    <footer class="footer">
+      <div class="container__footer">
+        copyright orange rabbit - designed by jake bhatt.
+      </div>
+    </footer>
   </body>
 </html>
